@@ -14,7 +14,7 @@ $("document").ready(function () {
                 func1();
                 wishtext.slideUp(2000);
                 imageHolder.animate({
-                    bottom: '250px',
+                    bottom: '290px',
                     opacity:'1'
                 }, 2000)
             }

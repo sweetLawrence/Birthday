@@ -9,12 +9,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: lighten;
-  opacity: 1;
+  opacity: .9;
+  overflow-y: hidden;
 }
 .holder {
   margin: 50px auto;
+  padding-top: 40px;
+  height: 100vh;
   display: flex;
   justify-content: space-evenly;
+  overflow: hidden;
 }
 .wishText {
   width: 35%;
@@ -22,7 +26,7 @@ body {
   background: rgba(8, 8, 73, 0.2);
   height: 500px;
   border-radius: 20px;
-  overflow-y: auto;
+  overflow-y: hidden;
   z-index: 1;
 }
 .hb {
@@ -34,7 +38,7 @@ body {
   padding: 1.2em;
 }
 .text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: orchid;
   color: white;
   font-weight: 700;
@@ -56,28 +60,30 @@ body {
   transform: rotate(45deg);
 }
 
-@keyframes glow {
+@-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
       0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     transform: rotate(60deg);
-    font-size: 6rem;
+   
   }
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
       0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     transform: rotate(-60deg);
 
-    font-size: 2rem;
+    
   }
 }
 
 .image {
-  margin-top: 70px;
+  margin-top: 10px;
+  padding-top: 40px;
   width: 30%;
   border-radius: 20px;
   position: relative;
   z-index: 1;
+  /* background: red; */
 }
 .image img {
   position: absolute;
@@ -85,7 +91,7 @@ body {
   border-radius: 50%;
   background: rgba(240, 248, 255);
   transition: all 3s ease-in-out;
-  opacity: .9;
+  opacity: .8;
 }
 .fadeIn{
   opacity:1;
@@ -104,19 +110,35 @@ body {
     align-items: center;
     justify-content: center;
     overflow-y: auto;
+    position: relative;
   }
   .wishText {
     width: 98%;
+    height: 400px;
   }
   .image {
+    margin-top: 10px;
     width: 70%;
     position: relative;
+
+   
   }
   .image img {
     width: 100%;
     border-radius: 50%;
-    background: rgba(240, 248, 255);
+    background: rgba(255,255,255,.1);
   }
+  
+  .hb {
+    font-size: 3rem;
+    padding: .9em;
+  }
+  .text {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.3em;
+  }
+  
 }
 
 /* include Animation On Scroll on your next edit. (AOS)*/

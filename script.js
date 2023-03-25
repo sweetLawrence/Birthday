@@ -1,4 +1,5 @@
-
+window.addEventListener("DOMContentLoaded", (event) => {
+ 
 let images = ['Imagesfolder/1.jpg', 'Imagesfolder/2.jpg', 'Imagesfolder/3.jpg', 'Imagesfolder/4.jpg', 'Imagesfolder/5.jpg', 'Imagesfolder/6.jpg', 'Imagesfolder/7.jpg',];
 let img = document.querySelector('#bdg');
 
@@ -145,5 +146,7 @@ function startImageTransition() {
 
     }
 }
+    
+});
 
 

@@ -10,7 +10,7 @@ $("document").ready(function () {
         var cnt = 0;
         setInterval(() => {
 
-         if (cnt % 3 == 0) {
+         if (cnt % 3 != 0) {
                 func1();
                 wishtext.slideUp(2000);
                 imageHolder.animate({

@@ -10,11 +10,12 @@ $("document").ready(function () {
         var cnt = 0;
         setInterval(() => {
 
-            if (cnt % 3 == 0) {
+         if (cnt % 3 == 0) {
                 func1();
                 wishtext.slideUp(2000);
                 imageHolder.animate({
-                    bottom: '200px',
+                    bottom: '250px',
+                    opacity:'1'
                 }, 2000)
             }
 
@@ -24,6 +25,7 @@ $("document").ready(function () {
 
                 imageHolder.animate({
                     bottom: '-10px',
+                    opacity:'0'
                 }, 2000)
             }
             cnt++;
